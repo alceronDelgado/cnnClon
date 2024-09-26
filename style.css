@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Variables */
+:root {
+  --rojo: #CC0000;
+  --negro: #333;
+  --blanco: #e8e8e4;
+}
