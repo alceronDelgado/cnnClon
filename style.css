@@ -382,6 +382,13 @@ a::after {
 
 /* Categoría opinión */
 
+.opinion {
+  margin: 0 auto;
+  width: 58%;
+  display: flex;
+  margin-top: 10px;
+}
+
 #opinionTitle {
   text-align: center;
   padding-bottom: 12px;
@@ -390,33 +397,24 @@ a::after {
   font-size: 20px;
 }
 
-.opinion {
-  margin: 0 auto;
-  width: 58%;
-  display: flex;
-  margin-top: 10px;
-}
-
 .itemOpinion {
   width: 20%;
   display: flex;
-  border: 1px solid var(--negro);
+  flex-direction: column;
 }
 
 .tituloOpinion {
   font-family: "CNN Sans Condensed";
   color: var(--negro);
-}
+  width: 100%;
+  font-size: 20px;
 
-.opinion1 {
-  border: 1px solid black;
-  display: flex;
-  width: inherit;
 }
 
 .profile {
   display: flex;
   flex-direction: row;
+  padding-right: 10px;
 }
 
 #profile1 {
@@ -424,8 +422,45 @@ a::after {
   height: auto;
 }
 
+.opinionSection {
+  margin-bottom: 40px;
+}
+
+#asideOpinion1,
+#asideOpinion2,
+#asideOpinion3,
+#asideOpinion4,
+#asideOpinion5 {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+
+/* Contenedor donde está la imagen */
+.imgProfile {
+  display: flex;
+  width: 50%;
+  flex-direction: row-reverse;
+}
+
+/* Esto hace que la imagen y el texto quede en forma de fila */
+.contentOpinion {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+
+/* Centramos el texto */
+#contentText1 {
+  display: flex;
+  align-items: center;
+  font-family: "CNN Sans Condensed";
+
+}
 
 
+/* Footer */
 
 footer {
   width: 100%;
