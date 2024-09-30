@@ -5,85 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CNN</title>
   <!-- Icono en pestaña del navegador -->
-  <link rel="shortcut icon" href="icons/cnnLogo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/icons/cnnLogo.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Cabecera -->
+<div class="page">
   <div class="header">
-    <div class="items">
-      <img src="icons/cnnLogo.png" alt="">
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>1e</h4>
-        <h4>icono</h4>
-        <h4>lupa</h4>
-        <h4>hamburguer  </h4>
+    <nav class="">
+      <div class="logo">
+        <img src="assets/img/cnnLogo.png" alt="" class="logo">
+      </div>
+      <div class="itemsHeader"><a href="">EE.UU.</a></div>
+      <div class="itemsHeader"><a href="">Mundo</a></div>
+      <div class="itemsHeader"><a href="">México</a></div>
+      <div class="itemsHeader"><a href="">Colombia</a></div>
+      <div class="itemsHeader"><a href="">Argentina</a></div>
+      <div class="itemsHeader"><a href="">Latam</a></div>
+      <div class="itemsHeader"><a href="">Negocios</a></div>
+      <div class="itemsHeader"><a href="">Clima</a></div>
+      <div class="itemsHeader"><a href="">Entretenimiento</a></div>
+      <div class="itemsHeader"><a href="">Video</a></div>
+      <div class="itemsHeader"><a href="">Deportes</a></div>
+      <div class="itemsHeader"><a href="">Salud</a></div>
+      <div class="itemsHeader"><img src="assets/img/" alt=""></div>
+      <div class="itemsHeader">
+        <a href="">lupa</a>
+      </div>
+      <div class="itemsHeader">
+        hamburger
+      </div>
+    </nav>
+  </div>
+    <!-- Menú temas del día -->
+    <div class="temasDia">
+      <span class="temasDiaItems">TEMAS DEL DÍA</span>
+      <span class="temasDiaItems">Ataques entre Israel y Hezbollah</span>
+      <span class="temasDiaItems">Helene en EE.UU.</span>
+      <span class="temasDiaItems">Trump Vs Harris</span>
+      <span class="temasDiaItems">Muerte de Nasrallah</span>
     </div>
-    
-    
-  </div>
-  <div class="temasDia">
-    <h4>Tema del día</h4>
-    <h3>tema D</h3>
-    <h3>tema D</h3>
-    <h3>tema D</h3>
-    <h3>tema D</h3>
-  </div>
 
-  <!-- Primer contenido  -->
+    <!-- Primer contenido  -->
   <div class="main">
-    <div class="item">
+    <div class="item" id="item1">
       <section class="noticia">
-        <div class="img"><img src="" alt="helen">
+        <div class="img">
+          <img src="assets/img/noticia1.webp" alt="helen" id="noticia1">
         </div>
-        <!-- A texto de la noticia agregarle el article -->
-        <article>Lorem ipsum dolor sit amet consectetur a?
+        <h2 id="tituloNoticia1">
+          Devastación en las calles del Líbano tras días de bombardeos israelíes
+        </h2>
+        <article id="arNoticia1">
+          En la céntrica Plaza de los Mártires, en el centro de Beirut, frente a un cartel que decía en grandes letras “Beirut no morirá”, había niños descalzos embarrados y familias durmiendo sobre esteras de paja. Una anciana que huyó de su barrio, dejando atrás todas sus posesiones, vendía cajas de pañuelos.
         </article>
-        <div class="titleItem">N</div>
-        <div class="textItem">A</div>
       </section>
+    </div>
+    <div class="item" id="item2">
       <section class="noticia">
-        <div class="img"><img src="" alt="crimen">
+        <div class="img">
+          <img src="assets/img/noticia2.webp" alt="helen" id="noticia2">
         </div>
-        <div class="titleItem">N</div>
-        <div class="textItem">A</div>
+        <span id="tituloNoticia2">
+          música
+        </span>
+        <article id="arNoticia2">
+          Murió el cantautor y actor Kris Kristofferson a los 88 años
+        </article>
       </section>
-      <section class="noticia" id="asidesNoticia">
-        <div class="img"><img src="" alt="helen">
+      <hr>
+      <section class="noticia">
+        <div class="img">
+          <img src="assets/img/noticia3.webp" alt="" id="noticia3">
         </div>
-        <div class="titleItem">N</div>
-        <div class="textItem">A</div>
+        <span id="tituloNoticia3">ciencia y espacio</span>
+        <article id="arNoticia3">
+          Astronautas del Crew-9 llegaron a la EEI tras una anomalía en la nave
+        </article>
+      </section>
+    </div>
+    <div class="item" id="item3">
+      <section class="noticia">
+        <div class="img">
+          <!-- aca va un video en vez de una imagen -->
+          <iframe src="https://www.youtube.com/watch?v=jcHw7L-F7Jk" frameborder="0" id="noticia4"></iframe>
+        </div>
+        <p id="tituloNoticia4">En TV SNL está de vuelta con su temporada 50 y las elecciones
+        </p>
+        <hr>
+        <!-- asides noticias -->
         <div class="asides">
-          <aside> 
-            <h3>Judicial1</h3>horaSean “Diddy” Combs quiere testificar en su juicio, dice su abogado</aside>
-          <aside><h3>Bolivia1 </h3>
-            horaEl ministro de Justicia de Bolivia renuncia al cargo
+          <aside class="asideItems">
+            <h3>Tiempo</h3>
+            Se forma la depresión tropical Doce en el Atlántico este
           </aside>
-          <aside>
+          <hr>
+          <aside class="asideItems">
+            <h3>Fútbol </h3>
+            Atleti y Real Madrid empatan en un derbi madrileño suspendido 20 minutos
+          </aside>
+          <hr>
+          <aside class="asideItems">
             <h3>México</h3>
-            ¿Qué son los microsismos y por qué se sienten en la Ciudad de México?
+            20 personas muertas tras el paso del huracán John por las costas de México
           </aside>
+          <hr>
         </div>
       </section>
     </div>
+
+
   </div>
 
-  <h1 id="latinoOpi">
+
+    <h1 id="latinoOpi">
     latinoamerica
   </h1>
 
   <div class="latinoamerica">
-    
+    <div class="latinItem" id="latinItem1">
+      <article>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum incidunt sed ipsum laboriosam accusamus, aperiam cupiditate ratione ea unde quaerat veniam nobis eos eum voluptas numquam expedita rem aspernatur natus.
+      </article>
+      <div class="asidesLatin">
+        <aside>
+          aside#1
+        </aside>
+        <aside>
+          aside#1
+        </aside>
+        <aside>
+          aside#1
+        </aside>
+
+      </div>
+
+    </div>
+    <div  class="latinItem" id="latinItem2">
+      <article >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi tenetur unde rerum voluptas consequatur labore debitis iure, dolorem quos eos quia, quas laudantium veritatis soluta nesciunt maxime nostrum eaque commodi.
+      </article>
+      <article>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit dolore sed explicabo tempora soluta! Velit natus fugit deserunt. Fugit, obcaecati facere? Aliquid dolore, ipsa doloremque tempore ex voluptatibus similique esse.
+      </article>
+
+    </div>
+    <div  class="latinItem" id="latinItem3">
+      <article >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi tenetur unde rerum voluptas consequatur labore debitis iure, dolorem quos eos quia, quas laudantium veritatis soluta nesciunt maxime nostrum eaque commodi.
+      </article>
+      <aside>
+        aside #2
+      </aside>
+      <aside>
+        aside #2
+      </aside>
+      <aside>
+        aside #2
+      </aside>
+
+    </div>
   </div>
 
   <div class="video">
@@ -117,6 +199,12 @@
       </div>
     </div>
   </div>
-
+  <footer>
+    <div class="footer">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, temporibus. Possimus odit nihil obcaecati placeat, laborum dignissimos numquam doloribus, explicabo ipsum minima doloremque porro eos, aut quos voluptate id hic?
+    </div>
+  </footer>
+</div>
+</div>
 </body>
 </html>
