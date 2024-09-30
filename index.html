@@ -13,34 +13,38 @@
   <!-- Cabecera -->
 <div class="page">
   <div class="header">
-    <nav class="">
-      <div class="logo">
-        <img src="assets/img/cnnLogo.png" alt="" class="logo">
-      </div>
-      <div class="itemsHeader"><a href="">EE.UU.</a></div>
-      <div class="itemsHeader"><a href="">Mundo</a></div>
-      <div class="itemsHeader"><a href="">México</a></div>
-      <div class="itemsHeader"><a href="">Colombia</a></div>
-      <div class="itemsHeader"><a href="">Argentina</a></div>
-      <div class="itemsHeader"><a href="">Latam</a></div>
-      <div class="itemsHeader"><a href="">Negocios</a></div>
-      <div class="itemsHeader"><a href="">Clima</a></div>
-      <div class="itemsHeader"><a href="">Entretenimiento</a></div>
-      <div class="itemsHeader"><a href="">Video</a></div>
-      <div class="itemsHeader"><a href="">Deportes</a></div>
-      <div class="itemsHeader"><a href="">Salud</a></div>
-      <div class="itemsHeader"><img src="assets/img/" alt=""></div>
-      <div class="itemsHeader">
-        <a href="">lupa</a>
-      </div>
-      <div class="itemsHeader">
-        hamburger
-      </div>
+    <nav>
+      <ul class="logo">
+        <li>
+          <img src="assets/img/cnnLogo.png" alt="" class="logo">
+        </li>
+      </ul>
+      <ul class="itemsHeader">
+        <li>EE.UU.</li>
+        <li>Mundo</li>
+        <li>México</li>
+        <li>Colombia</li>
+        <li>Argentina</li>
+        <li>Latam</li>
+        <li>Negocios</li>
+        <li>Clima</li>
+        <li>Entretenimiento</li>
+        <li>Video</li>
+        <li>Deportes</li>
+        <li>Salud</li>
+        <li><object data="assets/icons/worldIcon.svg" type="" id="worldIcon"></object>
+          <object data="assets/icons/downArrow.svg" type="" id="downArrow"></object></li>
+        <li><object data="assets/icons/searchIcon.svg" type="" id="searchIcon"></object></li>
+        <li>
+          <object data="assets/icons/burgerMenu.svg" type="" id="burgerMenu"></object>
+
+        </li>
+    </ul>
     </nav>
   </div>
     <!-- Menú temas del día -->
     <div class="temasDia">
-      <span class="temasDiaItems">TEMAS DEL DÍA</span>
+      <span class="temasDiaItems" id="tituloRojo">TEMAS DEL DÍA</span>
       <span class="temasDiaItems">Ataques entre Israel y Hezbollah</span>
       <span class="temasDiaItems">Helene en EE.UU.</span>
       <span class="temasDiaItems">Trump Vs Harris</span>
@@ -52,7 +56,7 @@
     <div class="item" id="item1">
       <section class="noticia">
         <div class="img">
-          <img src="assets/img/noticia1.webp" alt="helen" id="noticia1">
+          <img src="assets/img/noticia1.webp" alt="helen" id="noticia1" class="responsive">
         </div>
         <h2 id="tituloNoticia1">
           Devastación en las calles del Líbano tras días de bombardeos israelíes
@@ -65,7 +69,7 @@
     <div class="item" id="item2">
       <section class="noticia">
         <div class="img">
-          <img src="assets/img/noticia2.webp" alt="helen" id="noticia2">
+          <img src="assets/img/noticia2.webp" alt="helen" id="noticia2" class="responsive" width="100%" height="127px">
         </div>
         <span id="tituloNoticia2">
           música
@@ -77,7 +81,7 @@
       <hr>
       <section class="noticia">
         <div class="img">
-          <img src="assets/img/noticia3.webp" alt="" id="noticia3">
+          <img src="assets/img/noticia3.webp" alt="" id="noticia3" class="responsive">
         </div>
         <span id="tituloNoticia3">ciencia y espacio</span>
         <article id="arNoticia3">
@@ -89,7 +93,7 @@
       <section class="noticia">
         <div class="img">
           <!-- aca va un video en vez de una imagen -->
-          <iframe src="https://www.youtube.com/watch?v=jcHw7L-F7Jk" frameborder="0" id="noticia4"></iframe>
+          <iframe src="https://www.youtube.com/watch?v=jcHw7L-F7Jk" frameborder="0" id="noticia4" title="video" ></iframe>
         </div>
         <p id="tituloNoticia4">En TV SNL está de vuelta con su temporada 50 y las elecciones
         </p>
@@ -97,25 +101,23 @@
         <!-- asides noticias -->
         <div class="asides">
           <aside class="asideItems">
-            <h3>Tiempo</h3>
+            <h3 class="asideTitulo">Tiempo</h3>
             Se forma la depresión tropical Doce en el Atlántico este
           </aside>
           <hr>
           <aside class="asideItems">
-            <h3>Fútbol </h3>
+            <h3 class="asideTitulo">Fútbol </h3>
             Atleti y Real Madrid empatan en un derbi madrileño suspendido 20 minutos
           </aside>
           <hr>
           <aside class="asideItems">
-            <h3>México</h3>
+            <h3 class="asideTitulo">México</h3>
             20 personas muertas tras el paso del huracán John por las costas de México
           </aside>
           <hr>
         </div>
       </section>
     </div>
-
-
   </div>
 
 

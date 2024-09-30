@@ -17,11 +17,6 @@
   src: url(/assets/fonts/CNNSansW04-Condensed.woff);
 }
 
-@font-face {
-  font-family: "CNN Sans Condensed-bold";
-  src: url(assets/fonts/CNNSansW04-CondensedBold);
-}
-
 /* Variables */
 :root {
   --rojo: #CC0000;
@@ -46,6 +41,8 @@
 .logo {
   width: 50px;
   height: 50px;
+  text-decoration: none;
+  list-style: none;
 }
 
 nav {
@@ -54,17 +51,33 @@ nav {
   /* align-items: center; */
   color: var(--blanco);
   display: flex;
-  text-transform: capitalize;
 }
 
 .itemsHeader {
-  font-family: "CNN Sans Light";
+  width: 100%;
+  text-transform: capitalize;
+  font-family: "CNN Sans Condensed";
   display: flex;
   align-items: center;
   margin-right: .3em;
   padding-right: .3em;
+  text-decoration: none;
+  list-style: none;
 }
 
+
+li {
+  width: 78%;
+  max-width: 58%;
+}
+
+#searchIcon,
+#worldIcon,
+#downArrow,
+#burgerMenu {
+  width: 21px;
+  height: 21px;
+}
 
 a {
   text-decoration: none;
@@ -94,6 +107,11 @@ a::after {
   margin-bottom: 20px;
 }
 
+#tituloRojo {
+  color: var(--rojo);
+  font-weight: bold;
+}
+
 .temasDiaItems {
   font-size: 15px;
   margin-left: 3px;
@@ -104,28 +122,32 @@ a::after {
   margin: 0 auto;
   width: 58%;
   display: flex;
-  border: 1px solid black;
 }
 
 #item1 {
-  width: 100%;
-  background-color: yellow;
+  width: 40%;
 }
 
 .img {
-  object-fit: fill;
+  /* object-fit: fill; */
   margin-bottom: 10px;
 }
 
-.noticia {
+.item {
   width: 100%;
 }
 
+/* id que representa la imagen */
 #noticia1 {
-  width: inherit;
-  height: inherit;
+  /* width: inherit;
+  height: auto; */
   object-fit: cover;
+}
 
+.responsive {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 #tituloNoticia1 {
@@ -140,13 +162,14 @@ a::after {
 }
 
 #item2 {
-  width: 70%;
+  width: 30%;
   padding-left: 20px;
 }
 
 #noticia2 {
+  /* No se asigna tamaño por que ya está establecido como imagen en el img del html */
   width: inherit;
-  height: 170px;
+
 
 }
 
@@ -155,6 +178,8 @@ a::after {
   font-family: "CNN Sans Condensed";
   margin-bottom: 7px;
   font-size: 16px;
+  font-weight: bold;
+  color: var(--rojo);
 }
 
 #arNoticia2 {
@@ -167,12 +192,13 @@ a::after {
 }
 
 #item3 {
+  width: 30%;
   padding-left: 20px;
 }
 
 #noticia3 {
+  /* No se asigna tamaño por que ya está establecido como imagen en el img del html */
   margin-top: 25px;
-  width: inherit;
   height: 170px;
 }
 
@@ -180,6 +206,8 @@ a::after {
   text-transform: uppercase;
   font-family: "CNN Sans Condensed";
   margin-bottom: 7px;
+  font-weight: bold;
+  color: var(--rojo);
 }
 
 #arNoticia3 {
@@ -190,7 +218,7 @@ a::after {
 
 /* VIDEO */
 #noticia4 {
-  width: inherit;
+  width: 100%;
   height: 170px;
 }
 
@@ -212,6 +240,11 @@ a::after {
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: "CNN Sans Condensed";
+}
+
+.asideTitulo {
+  font-weight: bold;
+  color: var(--rojo);
 }
 
 /* Categoria de video */
