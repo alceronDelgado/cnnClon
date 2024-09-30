@@ -357,27 +357,28 @@ a::after {
   font-family: "CNN Sans Condensed";
 }
 
-
-
-
-
 /* Categoria de video */
+
+#videoTitle {
+  padding-bottom: 12px;
+  /* border: 1px solid black; */
+  font-family: "CNN Sans condensed";
+  font-size: 18px;
+  font-weight: 700px;
+
+}
 
 .video {
   margin: 0 auto;
   width: 58%;
-  border: 1px solid black;
   text-align: center;
   margin-top: 10px;
 }
 
-#videoTitle {
-  padding-bottom: 10px;
-}
+
 
 #videoRec {
-  height: 300px;
-  background-color: aqua;
+  height: inherit;
 }
 
 
