@@ -247,6 +247,120 @@ a::after {
   color: var(--rojo);
 }
 
+#latinoOpi {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "CNN Sans Condensed";
+  margin-bottom: 10px;
+}
+
+.latinoamerica {
+  width: 58%;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.latinItem {
+  display: flex;
+  flex-direction: column;
+}
+
+#latinItem1 {
+  width: 30%;
+}
+
+#latinoNoticia1 {
+  object-fit: cover;
+}
+
+.noticiaLatinoamerica {
+  /* margin-top: 25px; */
+  /* height: 170px; */
+  padding-bottom: 12px;
+}
+
+#latinItem2 {
+  padding-left: 12px;
+  width: 60%;
+}
+
+
+#latinItem3 {
+  padding-left: 12px;
+  width: 30%;
+
+}
+
+
+#tituloLatinoamerica1,
+#tituloLatinoamerica2,
+#tituloLatinoamerica3 {
+  font-family: "CNN Sans Condensed";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  padding-top: 12px;
+  color: var(--negro);
+}
+
+
+
+/* asides categoría Latinoamérica */
+
+.asidesLatin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.asidesItemsLatino {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+
+
+#colombiaAside,
+#venezuelaAside2,
+#venezuelaAside3 {
+  display: flex;
+  flex-direction: row;
+}
+
+#contenidoAside1,
+#contenidoAside2,
+#contenidoAside3 {
+  height: auto;
+  line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* Imagen del aside */
+
+#asideNoticia1,
+#asideNoticia2,
+#asideNoticia3 {
+  width: 80px;
+  height: auto;
+}
+
+/* Títulos aside */
+.titleAside {
+  font-family: "CNN Sans Condensed";
+  color: var(--rojo);
+}
+
+.contentAside {
+  font-family: "CNN Sans Condensed";
+}
+
+
+
+
+
 /* Categoria de video */
 
 .video {
@@ -266,41 +380,9 @@ a::after {
   background-color: aqua;
 }
 
-#latinoOpi {
-  text-align: center;
-}
 
-.latinoamerica {
-  border: 1px solid rgb(23, 111, 114);
-  width: 58%;
-  margin: 0 auto;
-  display: flex;
-}
 
-.latinItem {
-  display: flex;
-  height: 30%;
-  flex-direction: column;
-}
 
-#latinItem1 {
-  width: 30%;
-  border: 1px solid black;
-}
-
-.asidesLatin {
-  width: 30px;
-}
-
-#latinItem2 {
-  border: 1px solid black;
-  width: 40%;
-}
-
-#latinItem3 {
-  border: 1px solid black;
-  width: 30%;
-}
 
 #opinionTitle {
   text-align: center;
