@@ -375,23 +375,22 @@ a::after {
   margin-top: 10px;
 }
 
-
-
 #videoRec {
   height: inherit;
+  padding-bottom: 25px;
 }
 
-
-
-
+/* Categoría opinión */
 
 #opinionTitle {
   text-align: center;
+  padding-bottom: 12px;
+  font-family: "CNN Sans Condensed";
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .opinion {
-  border: 1px solid black;
-  height: 120px;
   margin: 0 auto;
   width: 58%;
   display: flex;
@@ -399,9 +398,14 @@ a::after {
 }
 
 .itemOpinion {
-  width: 100%;
+  width: 20%;
   display: flex;
+  border: 1px solid var(--negro);
+}
 
+.tituloOpinion {
+  font-family: "CNN Sans Condensed";
+  color: var(--negro);
 }
 
 .opinion1 {
@@ -409,6 +413,19 @@ a::after {
   display: flex;
   width: inherit;
 }
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+#profile1 {
+  width: inherit;
+  height: auto;
+}
+
+
+
 
 footer {
   width: 100%;
