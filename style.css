@@ -55,21 +55,16 @@ nav {
 
 .itemsHeader {
   width: 100%;
-  text-transform: capitalize;
   font-family: "CNN Sans Condensed";
   display: flex;
-  align-items: center;
-  margin-right: .3em;
-  padding-right: .3em;
-  text-decoration: none;
   list-style: none;
 }
 
-
-li {
-  width: 78%;
-  max-width: 58%;
+.itemsHeader .logo {
+  height: 50px;
+  width: auto;
 }
+
 
 #searchIcon,
 #worldIcon,
@@ -317,6 +312,7 @@ a::after {
 .asidesItemsLatino {
   padding-top: 12px;
   padding-bottom: 12px;
+  gap: 9px;
 }
 
 
@@ -357,15 +353,13 @@ a::after {
   font-family: "CNN Sans Condensed";
 }
 
-/* Categoria de video */
-
+/* Categoría de video */
 #videoTitle {
   padding-bottom: 12px;
   /* border: 1px solid black; */
   font-family: "CNN Sans condensed";
   font-size: 18px;
   font-weight: 700px;
-
 }
 
 .video {
@@ -381,20 +375,20 @@ a::after {
 }
 
 /* Categoría opinión */
-
-.opinion {
-  margin: 0 auto;
-  width: 58%;
-  display: flex;
-  margin-top: 10px;
-}
-
 #opinionTitle {
   text-align: center;
   padding-bottom: 12px;
   font-family: "CNN Sans Condensed";
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.opinion {
+  margin: 0 auto;
+  width: 58%;
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid black;
 }
 
 .itemOpinion {
@@ -408,7 +402,7 @@ a::after {
   color: var(--negro);
   width: 100%;
   font-size: 20px;
-
+  text-overflow: ellipsis;
 }
 
 .profile {
@@ -454,11 +448,12 @@ a::after {
 }
 
 /* Centramos el texto */
-#contentText1 {
+.contentText1 {
   display: flex;
   align-items: center;
   font-family: "CNN Sans Condensed";
-
+  width: 100%;
+  text-overflow: ellipsis;
 }
 
 /* Footer */
@@ -492,4 +487,21 @@ footer {
   display: flex;
   justify-content: center;
   font-family: "CNN Sans Condensed";
+}
+
+/* Media screen */
+/* @media screen and (max-width:995px), */
+@media screen and (max-width:1360px),
+screen and (max-height:700px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .page {
+    background-color: yellow;
+  }
+
+
 }
