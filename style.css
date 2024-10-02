@@ -38,20 +38,24 @@
   background-color: var(--negro);
 }
 
-.logo {
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
-  list-style: none;
+.logo{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
+.cnnImg{
+  width: 50px;
+  height: auto;
+  
+}
+/* 
 nav {
   width: 58%;
   margin: 0 auto;
-  /* align-items: center; */
   color: var(--blanco);
   display: flex;
-}
+} */
 
 .itemsHeader {
   width: 100%;
@@ -91,15 +95,26 @@ a::after {
   border-right: 10px solid var(--blanco);
 }
 
+.navTemasDia{
+  margin: 0 auto;
+  width: 58%;
+}
 
 .temasDia {
   display: flex;
-  width: 58%;
+  width: 100%;
   height: 50px;
-  margin: 0 auto;
+  border: 1px solid black;
   align-items: center;
   font-family: "CNN Sans Condensed";
   margin-bottom: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+.temasDia li{
+  /* border: 10px solid var(--rojo); */
 }
 
 #tituloRojo {
@@ -108,15 +123,17 @@ a::after {
 }
 
 .temasDiaItems {
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 3px;
   padding-top: 3px;
+
 }
 
 .main {
   margin: 0 auto;
   width: 58%;
   display: flex;
+  max-width: 1200px;
 }
 
 #item1 {
@@ -253,6 +270,7 @@ a::after {
   width: 58%;
   margin: 0 auto;
   display: flex;
+  height: auto;
 
 }
 
