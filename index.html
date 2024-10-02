@@ -14,6 +14,8 @@
 <!--   aplicar media querys
   Revisar los recursos de imagenes del instructor andres sanchez
   Cambiar border radios de px a porcentaje, preferiblemente un 50%
+  revisar esta página https://www.yunbitsoftware.com/blog/2017/06/22/viewport-units-css-que-es/
+  revisar esta página https://www.semrush.com/blog/semantic-html5-guide/
  -->
 
   <!-- Cabecera -->
@@ -21,7 +23,7 @@
   <header class="header">
     <ul class="logo">
       <li>
-        <img src="assets/img/cnnLogo.png" alt="" class="">
+        <img src="assets/img/cnnLogo.png" alt="" class="cnnImg">
       </li>
     </ul>
     <!-- <nav class="itemsHeader">
@@ -48,13 +50,20 @@
     </nav> -->
   </header>
     <!-- Menú temas del día -->
-    <div class="temasDia">
-      <span class="temasDiaItems" id="tituloRojo">TEMAS DEL DÍA</span>
-      <span class="temasDiaItems">Ataques entre Israel y Hezbollah</span>
-      <span class="temasDiaItems">Helene en EE.UU.</span>
-      <span class="temasDiaItems">Trump Vs Harris</span>
-      <span class="temasDiaItems">Muerte de Nasrallah</span>
-    </div>
+    <nav class="navTemasDia">
+      <ul class="temasDia">
+        <li><span class="temasDiaItems" id="tituloRojo">TEMAS DEL DÍA</span></li>
+        <li><span class="temasDiaItems">debate candidatos a la vicepresidencia</span></li>
+        <li><span class="temasDiaItems">|</span></li>
+        <li><span class="temasDiaItems">Guerra israel - Hezbollah</span></li>
+        <li><span class="temasDiaItems">|</span></li>
+        <li><span class="temasDiaItems">Helene en EE.UU.</span></li>
+        <li><span class="temasDiaItems">|</span></li>
+        <li><span class="temasDiaItems">domo de hierro en israel </span></li>
+        <li><span class="temasDiaItems">|</span></li>
+        <li><span class="temasDiaItems">irán</span></li>
+      </ul>
+    </nav>
 
     <!-- Primer contenido  -->
   <div class="main">
