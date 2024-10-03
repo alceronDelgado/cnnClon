@@ -57,26 +57,14 @@
 
 .flex {
   align-items: center;
-  font-size: 1.5vh;
+  font-size: 1.9vh;
+  margin-left: 3px;
 }
 
 #searchIcon {
   width: 50px;
   height: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Zona temas del día */
@@ -96,10 +84,10 @@
   list-style: none;
 }
 
-
+/* 
 .temasDia li {
-  /* border: 10px solid var(--rojo); */
-}
+  border: 1px solid red;
+} */
 
 #tituloRojo {
   color: var(--rojo);
@@ -322,29 +310,30 @@
 }
 
 
+/* TODO: CAMBIAR A  CLASS */
 
-#colombiaAside,
-#venezuelaAside2,
-#venezuelaAside3 {
+.itemAside{
   display: flex;
   flex-direction: row;
 }
 
-#contenidoAside1,
-#contenidoAside2,
-#contenidoAside3 {
+
+#venezuelaAside4{
+  display: flex;
+  width: 100%;
+}
+
+.contenidoAside{
   height: auto;
   line-height: 18px;
   display: flex;
   flex-wrap: wrap;
-
+  flex-direction: column;
 }
 
 /* Imagen del aside */
 
-#asideNoticia1,
-#asideNoticia2,
-#asideNoticia3 {
+.asideNoticia {
   width: 80px;
   height: auto;
 }
@@ -353,6 +342,12 @@
 .titleAside {
   font-family: "CNN Sans Condensed";
   color: var(--rojo);
+  width: 100%;
+}
+
+#titlteAsideVenezuela{
+  width: 100%;
+  height: 59%;
 }
 
 .contentAside {
