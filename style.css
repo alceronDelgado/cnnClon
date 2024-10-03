@@ -19,9 +19,29 @@
 :root {
   --rojo: #CC0000;
   --negro: #000000;
-  --gris: #595959;
+  --gris: #d6cfcf;
   --blanco: #e8e8e4;
 }
+
+
+/* Línea color rojo del título */
+.line {
+  margin: 0 auto;
+  width: 3%;
+  height: 3px;
+  color: var(--rojo);
+  background-color: var(--rojo);
+}
+
+/* Propiedades generales del título */
+.title {
+  text-align: center;
+  padding-bottom: 12px;
+  font-family: "CNN Sans Condensed";
+  text-transform: uppercase;
+  font-size: 2.5vh;
+}
+
 
 .page {
   width: 100%;
@@ -37,6 +57,17 @@
   /* Establecer el menú de manera fija usando position sticky y el top de 5 para que sea visible para el usuario */
   position: sticky;
   top: 0;
+}
+
+/* Menu hamburger icon */
+#burgerMenu {
+  width: 30px;
+  height: 50px;
+}
+
+#searchIcon {
+  width: 30px;
+  height: 30px;
 }
 
 .navHeader {
@@ -61,12 +92,6 @@
   margin-left: 3px;
 }
 
-#searchIcon {
-  width: 50px;
-  height: 50px;
-}
-
-
 /* Zona temas del día */
 .navTemasDia {
   margin: 0 auto;
@@ -84,7 +109,7 @@
   list-style: none;
 }
 
-/* 
+/*
 .temasDia li {
   border: 1px solid red;
 } */
@@ -112,6 +137,7 @@
   width: 58%;
   display: flex;
   max-width: 1200px;
+  margin-bottom: 20px;
 }
 
 #item1 {
@@ -129,8 +155,7 @@
 
 /* id que representa la imagen */
 #noticia1 {
-  /* width: inherit;
-  height: auto; */
+
   object-fit: cover;
 }
 
@@ -272,8 +297,10 @@
 #latinItem2 {
   padding-left: 12px;
   width: 60%;
-}
+  border: 1px solid var(--negro);
+  height: 30%;
 
+}
 
 #latinItem3 {
   padding-left: 12px;
@@ -281,10 +308,7 @@
 
 }
 
-
-#tituloLatinoamerica1,
-#tituloLatinoamerica2,
-#tituloLatinoamerica3 {
+.tituloLatinoamerica {
   font-family: "CNN Sans Condensed";
   font-size: 18px;
   font-weight: bold;
@@ -292,7 +316,6 @@
   padding-top: 12px;
   color: var(--negro);
 }
-
 
 
 /* asides categoría Latinoamérica */
@@ -312,18 +335,18 @@
 
 /* TODO: CAMBIAR A  CLASS */
 
-.itemAside{
+.itemAside {
   display: flex;
   flex-direction: row;
 }
 
 
-#venezuelaAside4{
+#venezuelaAside4 {
   display: flex;
   width: 100%;
 }
 
-.contenidoAside{
+.contenidoAside {
   height: auto;
   line-height: 18px;
   display: flex;
@@ -345,7 +368,7 @@
   width: 100%;
 }
 
-#titlteAsideVenezuela{
+#titlteAsideVenezuela {
   width: 100%;
   height: 59%;
 }
@@ -376,34 +399,31 @@
 }
 
 /* Categoría opinión */
-#opinionTitle {
-  text-align: center;
-  padding-bottom: 12px;
-  font-family: "CNN Sans Condensed";
-  text-transform: uppercase;
-  font-size: 20px;
-}
 
 .opinion {
   margin: 0 auto;
   width: 58%;
   display: flex;
   margin-top: 10px;
-  border: 1px solid black;
+  gap: 12px;
 }
 
 .itemOpinion {
   width: 20%;
   display: flex;
+  height: 200px;
   flex-direction: column;
+  border-radius: 12px;
+  justify-content: space-between;
 }
 
 .tituloOpinion {
   font-family: "CNN Sans Condensed";
   color: var(--negro);
   width: 100%;
-  font-size: 20px;
-  text-overflow: ellipsis;
+  font-size: 1.1rem;
+  text-overflow: clip;
+  padding: 3px;
 }
 
 .profile {
@@ -415,10 +435,6 @@
 #profile1 {
   width: inherit;
   height: auto;
-}
-
-.opinionSection {
-  margin-bottom: 40px;
 }
 
 #asideOpinion1,
@@ -435,9 +451,7 @@
 .imgProfile {
   display: flex;
   width: 50%;
-  flex-direction: row-reverse;
-  /* Separación entre la imagen y el footer */
-  padding-bottom: 20px;
+  justify-content: center;
 }
 
 /* Esto hace que la imagen y el texto quede en forma de fila */
@@ -445,7 +459,7 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-
+  align-items: center;
 }
 
 /* Centramos el texto */
@@ -453,8 +467,9 @@
   display: flex;
   align-items: center;
   font-family: "CNN Sans Condensed";
-  width: 100%;
-  text-overflow: ellipsis;
+  width: 50%;
+  max-width: 50%;
+  padding-left: 3px;
 }
 
 /* Footer */
