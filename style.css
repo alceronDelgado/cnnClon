@@ -155,7 +155,6 @@
 
 /* id que representa la imagen */
 #noticia1 {
-
   object-fit: cover;
 }
 
@@ -445,6 +444,7 @@
   width: 80px;
   height: 80px;
   border-radius: 80px;
+  object-fit: cover;
 }
 
 /* Contenedor donde está la imagen */
@@ -474,15 +474,43 @@
 
 /* Footer */
 footer {
+  /* width: 58%; */
   width: 100%;
+  margin: 0 auto;
+  /* height: auto; */
+  margin-top: 7vh;
+  border: 1px solid red;
+  display: flex;
   height: auto;
-  margin-top: 10px;
+  background-color: var(--negro);
 }
 
-.logoFooter {
+
+.footerItem {
+  display: flex;
+  /* height: auto; */
+  /* flex-grow: 1; */
+  padding: 1rem 0.3rem;
+  margin: 0 auto;
+  width: 14%;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.itemsFooter {
+  width: 100%;
+  color: var(--blanco);
+  flex-grow: 1;
+}
+
+.textFooter {
+  /* usar esta sentencia para calcular el tamaño en responsive */
+  /* width: calc(100%/1); */
+  /* background-color: yellow; */
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  font-family: "CNN Sans Condensed";
+  flex-direction: column;
 }
 
 #logoFooter {
@@ -490,20 +518,11 @@ footer {
   height: 50px;
 }
 
-.navFooter {
+.logoFooter {
   display: flex;
-  margin: 0 auto;
-  width: 58%;
-  list-style: none;
-  text-decoration: none;
-  padding: .5em 1em;
+  width: 100%;
 }
 
-.itemsFooter {
-  display: flex;
-  justify-content: center;
-  font-family: "CNN Sans Condensed";
-}
 
 /* Media screen */
 /* @media screen and (max-width:995px), */
