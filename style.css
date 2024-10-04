@@ -4,12 +4,6 @@
   margin: 0;
 }
 
-/*
- Es recomentable trabajar los margin a los divs y el relleno aplicarlo a los padding
- Margenes = Externos
- Rellenos = Internos
- */
-
 @font-face {
   font-family: "CNN Sans Condensed";
   src: url(/assets/fonts/CNNSansW04-Condensed.woff);
@@ -49,12 +43,11 @@
 }
 
 /* Header  */
-
 .header {
   height: 50px;
   width: 100%;
   background-color: var(--negro);
-  /* Establecer el menú de manera fija usando position sticky y el top de 5 para que sea visible para el usuario */
+  /* Establecer el menú de manera fija usando position sticky y el top de 0 para que sea visible para el usuario */
   position: sticky;
   top: 0;
 }
@@ -90,6 +83,7 @@
   align-items: center;
   font-size: 1.9vh;
   margin-left: 3px;
+  height: auto;
 }
 
 /* Zona temas del día */
@@ -274,6 +268,18 @@
 
 }
 
+#imgLatinoamerica {
+  background-image: url("assets/img/latinoNoticia3.jpeg");
+  background-repeat: no-repeat;
+  /* background size ajusta el tamaño de la imagen al contenedor en donde se va a colocar la imagen */
+  background-size: contain;
+  max-width: 100%;
+  width: 100%;
+  height: 127px;
+}
+
+
+
 .latinItem {
   display: flex;
   flex-direction: column;
@@ -296,7 +302,6 @@
 #latinItem2 {
   padding-left: 12px;
   width: 60%;
-  border: 1px solid var(--negro);
   height: 30%;
 
 }
@@ -410,9 +415,8 @@
 .itemOpinion {
   width: 20%;
   display: flex;
-  height: 200px;
+  height: 300px;
   flex-direction: column;
-  border-radius: 12px;
   justify-content: space-between;
 }
 
@@ -420,39 +424,24 @@
   font-family: "CNN Sans Condensed";
   color: var(--negro);
   width: 100%;
-  font-size: 1.1rem;
+  font-size: 1.3vw;
   text-overflow: clip;
   padding: 3px;
 }
 
-.profile {
-  display: flex;
-  flex-direction: row;
-  padding-right: 10px;
-}
-
-#profile1 {
-  width: inherit;
-  height: auto;
-}
-
-#asideOpinion1,
-#asideOpinion2,
-#asideOpinion3,
-#asideOpinion4,
-#asideOpinion5 {
-  width: 80px;
-  height: 80px;
-  border-radius: 80px;
-  object-fit: cover;
-}
 
 /* Contenedor donde está la imagen */
 .imgProfile {
-  display: flex;
+  background-image: url("assets/profiles/5797.jpg");
+  background-repeat: no-repeat;
+  /* background size ajusta el tamaño de la imagen al contenedor en donde se va a colocar la imagen */
+  background-size: contain;
+  max-width: 100%;
   width: 50%;
-  justify-content: center;
+  height: 120px;
+  border-radius: 50%;
 }
+
 
 /* Esto hace que la imagen y el texto quede en forma de fila */
 .contentOpinion {
@@ -462,22 +451,23 @@
   align-items: center;
 }
 
-/* Centramos el texto */
+
 .contentText1 {
   display: flex;
   align-items: center;
   font-family: "CNN Sans Condensed";
-  width: 50%;
+  font-weight: bold;
+  width: 100%;
   max-width: 50%;
   padding-left: 3px;
+  height: auto;
+  font-size: 0.9vw;
 }
 
 /* Footer */
 footer {
-  /* width: 58%; */
   width: 100%;
   height: auto;
-  margin-top: 7vh;
   display: flex;
   flex-direction: row;
   background-color: var(--negro);
@@ -529,18 +519,18 @@ footer {
   justify-content: flex-end;
 }
 
-#lineaFooter{
+#lineaFooter {
   width: 100%;
   color: var(--gris);
 }
 
-.listF{
+.listF {
   margin-top: 10px;
   width: 50%;
   display: flex;
 }
 
-.listFooter{
+.listFooter {
   display: flex;
   width: 100%;
   color: var(--blanco);
@@ -548,20 +538,20 @@ footer {
   justify-content: space-evenly;
 }
 
-.ulFooter{
+.ulFooter {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   width: auto;
-  list-style:none;
+  list-style: none;
   text-decoration: none;
   font-family: "CNN Sans Condensed";
-  
+
 }
 
 /* Psecudo clase */
 /* del contanier textFooter cada primer hijo aplique los siguientes estilos */
-.textFooter:nth-child(1){
+.textFooter:nth-child(1) {
   text-transform: uppercase;
   font-weight: bold;
 }
