@@ -147,15 +147,36 @@
   width: 100%;
 }
 
-/* id que representa la imagen */
-#noticia1 {
-  object-fit: cover;
+#imagenNoticia1 {
+  background-image: url("assets/img/noticia1.webp");
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+
+}
+
+#imagenNoticia2 {
+  background-image: url("assets/img/noticia2.webp");
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+}
+
+#imagenNoticia3 {
+  background-image: url("assets/img/noticia3.webp");
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  height: 150px;
 }
 
 .responsive {
   max-width: 100%;
   width: 100%;
   height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #tituloNoticia1 {
@@ -166,7 +187,8 @@
 
 #arNoticia1 {
   font-family: "CNN Sans Condensed";
-
+  line-height: 30px;
+  text-align: justify;
 }
 
 #item2 {
@@ -194,6 +216,7 @@
   padding-bottom: 13px;
   font-size: 22px;
   line-height: 28px;
+  text-align: justify;
 
 }
 
@@ -268,23 +291,52 @@
 
 }
 
+#imgLatinoamerica1 {
+  background-image: url("assets/img/latinoNoticia1.webp");
+  width: 100%;
+  max-width: 100%;
+  height: 225px;
+}
+
+#imgLatinoamerica2 {
+  background-image: url("assets/img/asideNoticia1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80px;
+}
+
 #imgLatinoamerica3 {
   background-image: url("assets/img/latinoNoticia3.jpeg");
-  background-repeat: no-repeat;
-  /* background size ajusta el tamaño de la imagen al contenedor en donde se va a colocar la imagen */
-  background-size: cover;
   max-width: 100%;
   width: 100%;
-  height: 157px;
-  /* height: auto; */
+  height: 127px;
+  /* border: 1px solid black; */
 }
 
-
-
-.latinItem {
-  display: flex;
-  flex-direction: column;
+#imgLatinoamerica4 {
+  background-image: url("assets/img/latinoNoticia2.jpg");
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
 }
+
+#imgAsideNoticia1 {
+  background-image: url("assets/img/asideNoticia1.webp");
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
+
+}
+
+/* Estas representan los asides derechos de la categoría Latinoamérica, se trabajo con clase para evitar redundancias */
+.imgAsideNoticia {
+  background-image: url("assets/img/asideNoticia1.jpg");
+  width: 100%;
+  max-width: 100%;
+  height: 80px;
+}
+
 
 #latinItem1 {
   width: 30%;
@@ -295,8 +347,6 @@
 }
 
 .noticiaLatinoamerica {
-  /* margin-top: 25px; */
-  /* height: 170px; */
   padding-bottom: 12px;
 }
 
