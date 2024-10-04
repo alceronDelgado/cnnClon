@@ -476,22 +476,22 @@
 footer {
   /* width: 58%; */
   width: 100%;
-  margin: 0 auto;
-  /* height: auto; */
-  margin-top: 7vh;
-  border: 1px solid red;
-  display: flex;
   height: auto;
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: row;
   background-color: var(--negro);
+  flex-wrap: wrap;
 }
 
 
 .footerItem {
   display: flex;
-  /* height: auto; */
+  margin-left: 12px;
+  margin-right: 12px;
   /* flex-grow: 1; */
-  padding: 1rem 0.3rem;
   margin: 0 auto;
+  padding: 1rem 0.3rem 0px 1rem;
   width: 14%;
   gap: 8px;
   flex-direction: column;
@@ -501,6 +501,8 @@ footer {
   width: 100%;
   color: var(--blanco);
   flex-grow: 1;
+  row-gap: 3px;
+  margin-bottom: 5px;
 }
 
 .textFooter {
@@ -514,13 +516,54 @@ footer {
 }
 
 #logoFooter {
+  /* margin: 1rem 0px 0px 1rem; */
+  margin-left: 1rem;
   width: 50px;
   height: 50px;
 }
 
 .logoFooter {
+  margin-top: 10px;
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+#lineaFooter{
+  width: 100%;
+  color: var(--gris);
+}
+
+.listF{
+  margin-top: 10px;
+  width: 50%;
+  display: flex;
+}
+
+.listFooter{
   display: flex;
   width: 100%;
+  color: var(--blanco);
+  gap: 3px;
+  justify-content: space-evenly;
+}
+
+.ulFooter{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: auto;
+  list-style:none;
+  text-decoration: none;
+  font-family: "CNN Sans Condensed";
+  
+}
+
+/* Psecudo clase */
+/* del contanier textFooter cada primer hijo aplique los siguientes estilos */
+.textFooter:nth-child(1){
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 
@@ -528,7 +571,7 @@ footer {
 /* @media screen and (max-width:995px), */
 @media screen and (max-width:1360px),
 screen and (max-height:700px) {
-  body {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
