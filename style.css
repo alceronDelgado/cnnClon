@@ -103,11 +103,6 @@
   list-style: none;
 }
 
-/*
-.temasDia li {
-  border: 1px solid red;
-} */
-
 #tituloRojo {
   color: var(--rojo);
   font-weight: bold;
@@ -149,9 +144,9 @@
 
 #imagenNoticia1 {
   background-image: url("assets/img/noticia1.webp");
-  width: 100%;
+  width: 100vw;
   max-width: 100%;
-  height: 300px;
+  height: 30vh;
 
 }
 
@@ -159,7 +154,7 @@
   background-image: url("assets/img/noticia2.webp");
   width: 100%;
   max-width: 100%;
-  height: 200px;
+  height: 20vh;
 }
 
 #imagenNoticia3 {
@@ -167,7 +162,7 @@
   width: 100%;
   max-width: 100%;
   max-height: 100%;
-  height: 150px;
+  height: 20vh;
 }
 
 .responsive {
@@ -262,7 +257,6 @@
 .asides {
   display: flex;
   flex-direction: column;
-  padding-top: 15px;
 }
 
 .asideItems {
@@ -303,29 +297,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 80px;
+  height: 10vh;
 }
 
 #imgLatinoamerica3 {
   background-image: url("assets/img/latinoNoticia3.jpeg");
   max-width: 100%;
   width: 100%;
-  height: 127px;
-  /* border: 1px solid black; */
+  height: 17vh;
 }
 
 #imgLatinoamerica4 {
   background-image: url("assets/img/latinoNoticia2.jpg");
   width: 100%;
   max-width: 100%;
-  height: 300px;
+  height: 35vh;
 }
 
 #imgAsideNoticia1 {
   background-image: url("assets/img/asideNoticia1.webp");
   width: 100%;
   max-width: 100%;
-  height: 150px;
+  height: 18vh;
 
 }
 
@@ -334,7 +327,7 @@
   background-image: url("assets/img/asideNoticia1.jpg");
   width: 100%;
   max-width: 100%;
-  height: 80px;
+  height: 10vh;
 }
 
 
@@ -387,9 +380,6 @@
   gap: 9px;
 }
 
-
-/* TODO: CAMBIAR A  CLASS */
-
 .itemAside {
   display: flex;
   flex-direction: row;
@@ -435,7 +425,6 @@
 /* Categoría de video */
 #videoTitle {
   padding-bottom: 12px;
-  /* border: 1px solid black; */
   font-family: "CNN Sans condensed";
   font-size: 18px;
   font-weight: 700px;
@@ -489,7 +478,7 @@
   background-size: contain;
   max-width: 100%;
   width: 50%;
-  height: 120px;
+  height: 12vh;
   border-radius: 50%;
 }
 
@@ -601,15 +590,15 @@ footer {
 
 }
 
-/* Psecudo clase */
-/* del contanier textFooter cada primer hijo aplique los siguientes estilos */
+/* Pseudo clase */
+/* del container textFooter cada primer hijo aplique los siguientes estilos */
 .textFooter:nth-child(1) {
   text-transform: uppercase;
   font-weight: bold;
 }
 
 
-/* Media screen */
+/* Responsive */
 /* @media screen and (max-width:995px), */
 @media screen and (max-width:1360px),
 screen and (max-height:700px) {
