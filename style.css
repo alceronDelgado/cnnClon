@@ -145,7 +145,7 @@
 
 .main {
   margin: 0 auto;
-  width: 58%;
+  width: 100%;
   display: flex;
   max-width: 1200px;
   margin-bottom: 20px;
@@ -606,6 +606,7 @@ footer {
 
 /* Responsive tablets */
 @media screen and (min-width: 769px) and (max-width:1024px) {
+
   * {
     margin: 0;
     padding: 0;
@@ -619,13 +620,17 @@ footer {
     flex-direction: column;
     display: flex;
     width: 100%;
-    height: calc(100vh - 855px);
-    position: relative;
+    width: auto;
   }
 
   .navHeader {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .navTemasDia {
+    width: auto;
+    padding: 3px;
   }
 
   /* El primer el elemento que es el iconHamburguer aplique los siguientes elementos. Usamos PseudoClase */
@@ -860,6 +865,7 @@ footer {
     margin-top: 3px;
     width: 100%;
     display: flex;
+    border: 1px solid black;
   }
 
   .temasDiaItems {
