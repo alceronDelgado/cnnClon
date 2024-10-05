@@ -487,7 +487,7 @@
 
 /* Contenedor donde está la imagen */
 .imgProfile {
-  background-image: url("assets/profiles/5797-removebg-preview.png");
+  background-image: url("assets/profiles/5797.png");
   background-repeat: no-repeat;
   /* background size ajusta el tamaño de la imagen al contenedor en donde se va a colocar la imagen */
   background-size: contain;
@@ -620,7 +620,8 @@ footer {
     flex-direction: column;
     display: flex;
     width: 100%;
-    width: auto;
+    /* height: calc(805px - 100vh); */
+    height: auto;
   }
 
   .navHeader {
@@ -668,6 +669,10 @@ footer {
     letter-spacing: 1px;
   }
 
+  .temasDiaItems {
+    font-size: 2vh;
+  }
+
   .temasDiaItems:after {
     content: "";
   }
@@ -679,7 +684,6 @@ footer {
   }
 
   .temasDiaItems a:hover {
-    /* background-color: black; */
     text-decoration: underline;
   }
 
@@ -829,13 +833,18 @@ footer {
     flex-direction: column;
     display: flex;
     width: 100%;
-    height: calc(100vh - 855px);
+    height: auto;
     position: relative;
   }
 
   .navHeader {
     display: flex;
     flex-wrap: nowrap;
+  }
+
+  .navTemasDia {
+    width: auto;
+    height: auto;
   }
 
   /* El primer el elemento que es el iconHamburguer aplique los siguientes elementos. Usamos PseudoClase */
@@ -862,20 +871,20 @@ footer {
   }
 
   .navTemasDia {
-    margin-top: 3px;
-    width: 100%;
     display: flex;
-    border: 1px solid black;
+    width: 100%;
+  }
+
+  .temasDia {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    letter-spacing: 1px;
   }
 
   .temasDiaItems {
-    font-size: 1.8vh;
-    flex-wrap: wrap-reverse;
-    display: flex;
-    letter-spacing: 0.3px;
+    font-size: 2vw;
   }
-
-
 
   .temasDiaItems::after {
     content: "";
@@ -888,15 +897,16 @@ footer {
   }
 
   .temasDiaItems a:hover {
-    /* background-color: black; */
     text-decoration: underline;
   }
+
+
+  /* Lo nuevo pegado */
 
   .main {
     width: 100%;
     display: flex;
     flex-direction: column;
-
   }
 
   .item {
@@ -1052,18 +1062,28 @@ footer {
     display: flex;
     width: 100%;
     padding-left: 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .itemOpinion {
-    width: 20%;
+    width: 100%;
     display: flex;
     height: auto;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--gris);
   }
 
+  /* Quitamos la imagen */
   .imgProfile {
-    display: none;
+    background-image: url("assets/profiles/5797.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+    width: 50%;
+    height: 12vh;
+    border-radius: 50%;
+
   }
 
   .tituloOpinion {
