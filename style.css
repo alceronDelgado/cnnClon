@@ -52,6 +52,14 @@
   top: 0;
 }
 
+/* Logo CNN de header */
+#cnnImg {
+  background-image: url("assets/img/cnnLogo.png");
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+}
+
 /* Menu hamburger icon */
 #burgerMenu {
   width: 30px;
@@ -66,7 +74,7 @@
 .navHeader {
   height: 50px;
   margin: 0 auto;
-  width: 58%;
+  width: 70%;
   display: flex;
   background-color: var(--negro);
   color: var(--blanco);
@@ -253,7 +261,6 @@
   text-transform: uppercase;
 }
 
-
 .asides {
   display: flex;
   flex-direction: column;
@@ -330,7 +337,6 @@
   height: 10vh;
 }
 
-
 #latinItem1 {
   width: 30%;
 }
@@ -347,13 +353,11 @@
   padding-left: 12px;
   width: 60%;
   height: 30%;
-
 }
 
 #latinItem3 {
   padding-left: 12px;
   width: 30%;
-
 }
 
 .tituloLatinoamerica {
@@ -367,7 +371,6 @@
 
 
 /* asides categoría Latinoamérica */
-
 .asidesLatin {
   width: 100%;
   display: flex;
@@ -385,7 +388,6 @@
   flex-direction: row;
 }
 
-
 #venezuelaAside4 {
   display: flex;
   width: 100%;
@@ -400,7 +402,6 @@
 }
 
 /* Imagen del aside */
-
 .asideNoticia {
   width: 80px;
   height: auto;
@@ -443,7 +444,6 @@
 }
 
 /* Categoría opinión */
-
 .opinion {
   margin: 0 auto;
   width: 58%;
@@ -482,7 +482,6 @@
   border-radius: 50%;
 }
 
-
 /* Esto hace que la imagen y el texto quede en forma de fila */
 .contentOpinion {
   display: flex;
@@ -490,7 +489,6 @@
   width: 100%;
   align-items: center;
 }
-
 
 .contentText1 {
   display: flex;
@@ -515,12 +513,10 @@ footer {
   flex-wrap: wrap;
 }
 
-
 .footerItem {
   display: flex;
   margin-left: 12px;
   margin-right: 12px;
-  /* flex-grow: 1; */
   margin: 0 auto;
   padding: 1rem 0.3rem 0px 1rem;
   width: 14%;
@@ -537,9 +533,6 @@ footer {
 }
 
 .textFooter {
-  /* usar esta sentencia para calcular el tamaño en responsive */
-  /* width: calc(100%/1); */
-  /* background-color: yellow; */
   display: flex;
   justify-content: center;
   font-family: "CNN Sans Condensed";
@@ -547,7 +540,6 @@ footer {
 }
 
 #logoFooter {
-  /* margin: 1rem 0px 0px 1rem; */
   margin-left: 1rem;
   width: 50px;
   height: 50px;
@@ -597,20 +589,198 @@ footer {
   font-weight: bold;
 }
 
-
-/* Responsive */
-/* @media screen and (max-width:995px), */
-@media screen and (max-width:1360px),
-screen and (max-height:700px) {
+/* Responsive tablets */
+@media screen and (min-width: 769px) and (max-width:1024px) {
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
   .page {
-    background-color: yellow;
+    width: 100%;
   }
 
+  .header {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 855px);
+    position: relative;
+  }
+
+  .navHeader {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* El primer el elemento que es el iconHamburguer aplique los siguientes elementos. Usamos PseudoClase */
+  .itemsFlex:nth-child(1) {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .itemsFlex:nth-child(2) {
+    width: 100%;
+
+  }
+
+  /* De itemsFlex los que no tengan la clase responsive que oculte los elementos */
+  .itemsFlex:not(.responsive) {
+    display: none;
+  }
+
+  /* tamaño de la imagen */
+  #cnnImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navTemasDia {
+    display: flex;
+    width: 100%;
+  }
+
+  .temasDia {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .temasDiaItems:after {
+    content: "";
+  }
+
+  .main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #item1 {
+    width: 100%;
+  }
+
+  #item2 {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .item:nth-child(2) {
+    display: flex;
+    width: 50%;
+    gap: 8px;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  #item3 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  #item3 #noticia4 {
+    height: 300px;
+  }
+
+  .latinoamerica {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #latinItem1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  #latinItem1 .noticiaLatinoamerica {
+    width: 70%;
+  }
+
+  #latinItem1 .itemAside {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Centramos el aside  que está en el contenedor llamado latiItem1*/
+  .itemAside {
+    display: flex;
+    align-items: center;
+  }
+
+  #latinItem2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  #latinItem2 #imgLatinoamerica4,
+  #imgAsideNoticia1 {
+    /* Usamos la coordenada y para determinar hacia donde queremos bajar posicionar la imagen dentro del contenedor #latinItem2 */
+    background-position-y: 20px;
+  }
+
+  #latinItem3 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  #imgLatinoamerica3 {
+    height: 300px;
+  }
+
+  .asidesLatin {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .video {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  /* Categoría opinión */
+  .title {
+    font-size: 2.5vw;
+  }
+
+  .opinion {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .itemOpinion {
+    width: 20%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .imgProfile {
+    display: none;
+  }
+
+  .tituloOpinion {
+    font-size: 1.2rem;
+  }
+
+  .contentText1 {
+    font-size: 3vh;
+    color: var(--rojo);
+  }
 
 }

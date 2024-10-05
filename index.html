@@ -15,10 +15,12 @@
   <div class="page">
   <header class="header">
     <ul class="navHeader">
-      <li class="itemsFlex">
+      <li class="itemsFlex responsive">
         <object data="assets/icons/burgerMenu.svg" type="" id="burgerMenu">
         </object>
-        <img src="assets/img/cnnLogo.png" alt="cnnLoo" id="cnnImg">
+      </li>
+
+      <li class="itemsFlex responsive" id="cnnImg">
       </li>
       <li class="itemsFlex flex">EE.UU.</li>
       <li class="itemsFlex flex">Mundo</li>
@@ -29,11 +31,15 @@
       <li class="itemsFlex flex">Negocios</li>
       <li class="itemsFlex flex">Clima</li>
       <li class="itemsFlex flex">Entretenimiento</li>
-      <li class="itemsFlex flex">Video</li>
-      <li class="itemsFlex flex">Deportes</li>
-      <li class="itemsFlex flex">Salud</li>
-      <li class="itemsFlex flex">Más</li>
-      <li class="itemsFlex flex">Dólar</li>
+      <li class="itemsFlex flex">Más
+        <!-- en la etiqueta más implementar un dropdown de video,deportes,salud y dolar
+            <li class="itemsFlex flex">Video</li>
+            <li class="itemsFlex flex">Deportes</li>
+            <li class="itemsFlex flex">Salud</li>
+            <li class="itemsFlex flex">Dólar</li>
+        -->
+      </li>
+
       <li class="itemsFlex flex" >
         <object data="assets/icons/searchIcon.svg" type="" id="searchIcon"></object>
       </li>
@@ -87,12 +93,14 @@
     </div>
     <div class="item" id="item3">
       <section class="noticia">
-        <div class="img">
+        <div class="img" id="video">
           <!-- aca va un video en vez de una imagen -->
           <iframe src="https://www.youtube.com/watch?v=jcHw7L-F7Jk" frameborder="0" id="noticia4" title="video" ></iframe>
-        </div>
+
         <p id="tituloNoticia4">En TV SNL está de vuelta con su temporada 50 y las elecciones
         </p>
+        </div>
+
         <hr>
         <!-- asides noticias -->
         <div class="asides">
@@ -115,6 +123,7 @@
       </section>
     </div>
   </div>
+
   <div>
     <h1 class="title">latinoamerica
       <div class="line"></div>
@@ -159,8 +168,8 @@
           <p class="contentAside">Inter Miami conquistó la Supporters' Shield: ¿podría Messi estar en el Mundial de Clubes de 2025?</p>
         </div>
       </aside>
-
     </div>
+
     <div class="latinItem" id="latinItem3">
       <section class="noticiaLatinoamerica">
         <div class="responsive" id="imgLatinoamerica3">
@@ -213,7 +222,6 @@
       <!-- categoria opinión -->
     <div id="videoRec">
       <video src="assets/video/video.mp4" width="100%" height="auto" controls>
-      </video>
       </video>
     </div>
   </div>
