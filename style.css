@@ -596,10 +596,6 @@ footer {
     padding: 0;
   }
 
-  body {
-    background-color: aqua;
-  }
-
   .page {
     width: 100%;
   }
@@ -794,10 +790,6 @@ footer {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
-
-  body {
-    background-color: yellow;
   }
 
   .header {
