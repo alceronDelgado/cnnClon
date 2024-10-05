@@ -109,11 +109,14 @@
   margin-bottom: 20px;
   text-decoration: none;
   list-style: none;
+  letter-spacing: 0.1px;
 }
 
 #tituloRojo {
   color: var(--rojo);
   font-weight: bold;
+  list-style: none;
+  text-decoration: none;
 }
 
 .temasDiaItems {
@@ -122,6 +125,17 @@
   margin-left: 3px;
   padding-top: 3px;
   height: auto;
+}
+
+.temasDiaItems a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--negro);
+}
+
+.temasDiaItems a:hover {
+  /* background-color: black; */
+  text-decoration: underline;
 }
 
 .temasDiaItems::after {
@@ -646,10 +660,22 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100%;
+    letter-spacing: 1px;
   }
 
   .temasDiaItems:after {
     content: "";
+  }
+
+  .temasDiaItems a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--negro);
+  }
+
+  .temasDiaItems a:hover {
+    /* background-color: black; */
+    text-decoration: underline;
   }
 
   .main {
@@ -840,10 +866,24 @@ footer {
     font-size: 1.8vh;
     flex-wrap: wrap-reverse;
     display: flex;
+    letter-spacing: 0.3px;
   }
+
+
 
   .temasDiaItems::after {
     content: "";
+  }
+
+  .temasDiaItems a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--negro);
+  }
+
+  .temasDiaItems a:hover {
+    /* background-color: black; */
+    text-decoration: underline;
   }
 
   .main {
@@ -1038,6 +1078,7 @@ footer {
     font-size: 10px;
     padding-left: 0px;
     margin: 0px;
+    margin-top: 20px;
   }
 
   .footerItem {
