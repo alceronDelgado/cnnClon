@@ -596,6 +596,10 @@ footer {
     padding: 0;
   }
 
+  body {
+    background-color: aqua;
+  }
+
   .page {
     width: 100%;
   }
@@ -782,5 +786,276 @@ footer {
     font-size: 3vh;
     color: var(--rojo);
   }
+
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background-color: yellow;
+  }
+
+  .header {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 855px);
+    position: relative;
+  }
+
+  .navHeader {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  /* El primer el elemento que es el iconHamburguer aplique los siguientes elementos. Usamos PseudoClase */
+  .itemsFlex:nth-child(1) {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .itemsFlex:nth-child(2) {
+    width: 100%;
+
+  }
+
+  /* De itemsFlex los que no tengan la clase responsive que oculte los elementos */
+  .itemsFlex:not(.responsive) {
+    display: none;
+  }
+
+  /* tamaño de la imagen */
+  #cnnImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navTemasDia {
+    margin-top: 3px;
+    width: 100%;
+    display: flex;
+  }
+
+  .temasDiaItems {
+    font-size: 1.8vh;
+    flex-wrap: wrap-reverse;
+    display: flex;
+  }
+
+  .temasDiaItems::after {
+    content: "";
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .item {
+    display: flex;
+    row-gap: 8px;
+    flex-direction: column;
+  }
+
+  #item1 {
+    /* border: 1px solid black; */
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  /* colocamos el article como oculto para el usuario */
+  #item1 #arNoticia1 {
+    display: none;
+  }
+
+  #item2 {
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  #item2 .noticia:first-child {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+
+  #item2 .noticia:last-child {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+  }
+
+  #item2 #imagenNoticia2 {
+    width: 30%;
+  }
+
+  #item2 #imagenNoticia3 {
+    width: 36%;
+
+  }
+
+  /* Quitamos el título de música */
+  #tituloNoticia2,
+  #tituloNoticia3 {
+    display: none;
+  }
+
+  #arNoticia2,
+  #arNoticia3 {
+    margin-top: 0px;
+  }
+
+  #item3 {
+    padding-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #item3 .noticia {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .noticia #video {
+    justify-content: center;
+  }
+
+  .asides {
+    gap: 8px;
+  }
+
+  .latinoamerica {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #latinItem1 {
+    width: 100%;
+  }
+
+  /* IMAGEN DE LA NOTICIA 1 */
+  #imgLatinoamerica1 {
+    height: 300px;
+  }
+
+  /* TAMAÑO DEL ASIDE */
+  #latinItem1 #aside {
+    display: flex;
+    width: 100%;
+  }
+
+  #imgLatinoamerica2,
+  .titleAside {
+    display: none;
+  }
+
+  #latinItem2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+
+  #imgLatinoamerica4 {
+    background-position-y: 20px;
+    height: 350px;
+  }
+
+  #imgAsideNoticia1 {
+    display: none;
+  }
+
+  #latinItem3 {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  #latinItem3 section {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Quitamos las imagenes aside */
+  .imgAsideNoticia {
+    display: none;
+  }
+
+  /* Video */
+  .video {
+    width: 100%;
+  }
+
+  /* Opinión */
+  /* Categoría opinión */
+  .title {
+    font-size: 2.5vw;
+  }
+
+  .opinion {
+    display: flex;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .itemOpinion {
+    width: 20%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .imgProfile {
+    display: none;
+  }
+
+  .tituloOpinion {
+    font-size: 0.9rem;
+  }
+
+  .contentOpinion {
+    display: flex;
+    width: 100%;
+  }
+
+  .contentText1 {
+    font-size: 1.3vh;
+    color: var(--rojo);
+  }
+
+  /* TODO: colocar el footer en formato de columnas cada item *
+   */
+  footer {
+    font-size: 10px;
+    padding-left: 0px;
+    margin: 0px;
+  }
+
+  .footerItem {
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+
+
+
+
+
 
 }
