@@ -458,6 +458,7 @@
   height: 300px;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--gris);
 }
 
 .tituloOpinion {
@@ -472,7 +473,7 @@
 
 /* Contenedor donde está la imagen */
 .imgProfile {
-  background-image: url("assets/profiles/5797.jpg");
+  background-image: url("assets/profiles/5797-removebg-preview.png");
   background-repeat: no-repeat;
   /* background size ajusta el tamaño de la imagen al contenedor en donde se va a colocar la imagen */
   background-size: contain;
@@ -768,6 +769,7 @@ footer {
     display: flex;
     height: auto;
     flex-direction: column;
+    background-color: var(--gris);
   }
 
   .imgProfile {
@@ -1011,6 +1013,7 @@ footer {
     display: flex;
     height: auto;
     flex-direction: column;
+    background-color: var(--gris);
   }
 
   .imgProfile {
