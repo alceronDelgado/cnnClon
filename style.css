@@ -1039,8 +1039,6 @@ footer {
     color: var(--rojo);
   }
 
-  /* TODO: colocar el footer en formato de columnas cada item *
-   */
   footer {
     font-size: 10px;
     padding-left: 0px;
@@ -1051,11 +1049,5 @@ footer {
     margin-top: 10px;
     padding: 0px;
   }
-
-
-
-
-
-
 
 }
